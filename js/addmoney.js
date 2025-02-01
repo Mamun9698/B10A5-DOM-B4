@@ -1,4 +1,4 @@
-// add donation
+// // add donation for Noakhali start
 document.getElementById('btn-add-money').addEventListener('click',function(event){
     event.preventDefault();
 
@@ -33,3 +33,6 @@ document.getElementById('default-balance').innerText = transfarAmount.toFixed(2)
 document.getElementById('input-add-money').value = "";
                                   
 });
+
+// add donation for Noakhali end
+
