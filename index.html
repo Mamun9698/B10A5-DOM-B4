@@ -18,9 +18,9 @@
                 <img src="assets/logo.png" alt="image">
                 <h2 class="mt-2">Donate Bangladeh</h2> 
             </div>
-            <div class="flex space-x-2">
+            <div class="flex space-x-2 mr-5">
                 <img src="assets/coin.png" alt="image">
-                <h2>20000.00 BDT</h2>
+                <div id="default-balance">50000.00</div>
             </div>
          </nav>
          <!-- Navbar end -->
@@ -33,19 +33,31 @@
      </main>
 
      <!-- Body Part Start -->
-      <div class="flex p-10">
+      <div class="flex p-10 h-40px w-40px rounded-md shadow-2xl border-4 border-white-500 text-black ml-10 mr-10 pl-4 mt-10">
         <div>
         <img src="assets/noakhali.png" alt="image">
         </div>
         <div>
-        <h1 style="font-weight: bold; color: black;">Donate for Flood at Noakhali, Bangladesh</h1>
-        <p>
-            The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need. 
+            <div class="flex space-x-2 ml-5">
+                <img src="assets/coin.png" alt="image">
+                <div id="noakhali-balance">1000.00</div>
+            </div>
+        <h1 style="font-weight: bold; color: black; margin-left: 10px; margin: 10px,10px;">Donate for Flood at Noakhali, Bangladesh</h1>
+        <p style="margin-left: 10px;">
+            The recent floods in Noakhali have caused significant damage to homes  infrastructure.Your donation will help provide essential supplies and  to those affected by this disaster.Every contribution, big or small, makes  difference.Please join us in supporting the relief efforts and making a positive impact on the lives of those in need. 
         </p>
+        <div>
+        <input id="input-add-money" style="width: 50% ;border-radius: 5px;margin-left: 100px;height: 40px; margin-top: 10px; border: 2px solid black; text-align: center; background-color: white;" type="text" placeholder="Donation Amount" required><br><br>
+        <button id="btn-add-money" style="background:rgba(180, 244, 97, 1) ; color: black;width: 50%; border-radius: 5px;height: 40px;font-weight: bold; margin-left: 100px;">Donate Now</button>
+        </div>
+          
         </div>
       </div>
+      
+      
      <!-- Body Part End -->
      
     <script src="js/blog.js"></script>
+    <script src="js/addmoney.js"></script>
 </body>
 </html>
