@@ -7,10 +7,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>DONATE BANGLADESH</title>
 </head>
-<body style="background-color: white;">
+<body id="show-donation-page" style="background-color: white;">
     <!-- Navbar start -->
-     <main>
-        <nav class=" flex justify-around bg-gray-100 text-black font-bold text-1xl p-7">
+     <main class="fixed top-0 right-0 left-0">
+        <nav class=" flex justify-around bg-gray-100 text-black font-bold text-1xl p-7 ">
             <div class="mt-2">
                 <button id="btn-blog" style="background-color: rgba(180, 244, 97, 1);border-radius: 5px; width: 100px;height: 50px ;">Blog</button>
             </div>
@@ -24,13 +24,17 @@
             </div>
          </nav>
          <!-- Navbar end -->
-          <!-- Redirect Button Start -->
-           <div class="flex justify-center space-x-2 mb-10 mt-10">
-            <button style="background-color:rgba(180, 244, 97, 1) ; border-radius: 5px;width: 110px; height: 50px; font-weight: bold;color: black;">Donation</button>
-            <button style="border-radius: 5px;width: 110px; height: 50px; font-weight: bold;color: black;background-color:white;border:2px solid gray;">History</button>
-           </div>
-          <!-- Redirect Button End -->
+
      </main>
+      <!-- Redirect Button Start -->
+      <div class="flex mt-24 justify-center sticky top-24">
+        <div class="flex justify-center space-x-2 mb-10 mt-10 ">
+           <button id="btn-show-donation" style="background-color:rgba(180, 244, 97, 1) ; border-radius: 5px;width: 110px; height: 50px; font-weight: bold;color: black;">Donation</button>
+           <button id="btn-show-transaction-history" style="border-radius: 5px;width: 110px; height: 50px; font-weight: bold;color: black;background-color:white;border:2px solid gray;">History</button>
+          </div> 
+        </div>
+        <!-- Redirect Button End -->
+     
 
      <!-- Body Part Start -->
       <!-- Noakhali part start -->
@@ -94,20 +98,31 @@
             The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need. 
         </p>
         <div>
-        <input id="inputQuota-add-money" style="width: 50% ;border-radius: 5px;margin-left: 100px;height: 40px; margin-top: 10px; border: 2px solid black; text-align: center; background-color: white;" type="text" placeholder="Donation Amount" required><br><br>
-        <button id="btn-add-money" style="background:rgba(180, 244, 97, 1) ; color: black;width: 50%; border-radius: 5px;height: 40px;font-weight: bold; margin-left: 100px;">Donate Now</button>
+        <input id="inputquota-add-money" style="width: 50% ;border-radius: 5px;margin-left: 100px;height: 40px; margin-top: 10px; border: 2px solid black; text-align: center; background-color: white;" type="text" placeholder="Donation Amount" required><br><br>
+        <button id="btnquota-add-money" style="background:rgba(180, 244, 97, 1) ; color: black;width: 50%; border-radius: 5px;height: 40px;font-weight: bold; margin-left: 100px;">Donate Now</button>
         </div>
           
         </div>
       </div>
 
        <!-- Quota part end -->
+        <!-- Transaction section start -->
+         <div id="transaction-section">
+            <h2 class="text-5xl text-center">Transaction History</h2>
+            <div id="transaction-container">
 
+            </div>
+         </div>
+        <!-- Transaction section end -->
       
      <!-- Body Part End -->
      
     <script src="js/blog.js"></script>
     <script src="js/addmoney.js"></script>
     <script src="js/addmoneyfeni.js"></script>
+    <script src="js/addmoneyquota.js"></script>
+    <script src="js/features.js"></script>
+    <script src="js/utility.js"></script>
+    <script src="js/history.js"></script>
 </body>
 </html>
